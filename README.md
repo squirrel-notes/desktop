@@ -1,10 +1,10 @@
-# Squirrel Notes for desktop (beta)
+# Squirrel Notes for desktop and Android (beta)
 
-A desktop app for [Squirrel Notes](https://squirrelnotes.app), the private, encrypted notes app, for Windows, macOS and Linux.
+Desktop and Android apps for [Squirrel Notes](https://squirrelnotes.app), the private, encrypted notes app: Windows, macOS and Linux, and now Android.
 
 It opens your Squirrel Notes account in its own window, with a dock or taskbar icon, a launcher entry, and the app's own title bar with search and the focus timer. Your notes are encrypted on your device exactly as they are in the browser: the app runs the same Squirrel Notes you use at [my.squirrelnotes.app](https://my.squirrelnotes.app).
 
-> **Beta.** These builds are early and **not signed**. Expect rough edges, and install each new version by hand (there are no automatic updates yet).
+> **Beta.** These builds are early and **not signed**. The beta apps have a **purple acorn** icon, so you can tell them from the Squirrel Notes you install from the browser. Expect rough edges, and install each new version by hand (there are no automatic updates yet).
 
 ## Download
 
@@ -17,6 +17,7 @@ Get the latest build from [Releases](https://github.com/squirrel-notes/desktop/r
 | Mac with an Intel processor | `squirrel-notes-desktop-<version>-mac-intel.zip` |
 | Windows PC (most PCs) | `squirrel-notes-desktop-<version>-windows-x64-setup.exe` |
 | Windows on Arm (Snapdragon, Copilot+ PCs) | `squirrel-notes-desktop-<version>-windows-arm64-setup.exe` |
+| Android phone or tablet (Android 7 or later, with Chrome) | `squirrel-notes-android-<version>.apk` |
 
 Each release has a `SHA256SUMS.txt` to check your download against.
 
@@ -46,6 +47,14 @@ This also installs an AppArmor profile, which Ubuntu 24.04 and later need to run
 1. Run the setup file. It installs for your account only, with no admin prompt.
 2. Because the beta isn't signed yet, Windows shows **Windows protected your PC**. Choose **More info**, then **Run anyway**.
 3. Squirrel Notes opens, and is in the Start menu and on your desktop.
+
+### Android
+
+1. Download the `.apk` on your phone and open it.
+2. Android asks whether to allow installs from your browser or file manager: allow it for this install.
+3. Open **Squirrel** from your apps.
+
+The Android app runs Squirrel Notes in your phone's Chrome, so passkeys, password managers and your Google sign-in work as they do there. Find on page and the overdue badge are desktop-only for now, and the bar at the bottom follows your phone's light or dark mode rather than the theme you choose in the app.
 
 ## Good to know
 
