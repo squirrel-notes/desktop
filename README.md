@@ -1,6 +1,6 @@
 # Squirrel Notes for desktop (beta)
 
-A desktop app for [Squirrel Notes](https://squirrelnotes.app), the private, encrypted notes app, for Linux and macOS.
+A desktop app for [Squirrel Notes](https://squirrelnotes.app), the private, encrypted notes app, for Windows, macOS and Linux.
 
 It opens your Squirrel Notes account in its own window, with a dock or taskbar icon, a launcher entry, and the app's own title bar with search and the focus timer. Your notes are encrypted on your device exactly as they are in the browser: the app runs the same Squirrel Notes you use at [my.squirrelnotes.app](https://my.squirrelnotes.app).
 
@@ -15,6 +15,8 @@ Get the latest build from [Releases](https://github.com/squirrel-notes/desktop/r
 | Ubuntu or Debian (x64) | `squirrel-notes-desktop_<version>_amd64.deb` |
 | Mac with Apple silicon (M1 or later) | `squirrel-notes-desktop-<version>-mac-apple-silicon.zip` |
 | Mac with an Intel processor | `squirrel-notes-desktop-<version>-mac-intel.zip` |
+| Windows PC (most PCs) | `squirrel-notes-desktop-<version>-windows-x64-setup.exe` |
+| Windows on Arm (Snapdragon, Copilot+ PCs) | `squirrel-notes-desktop-<version>-windows-arm64-setup.exe` |
 
 Each release has a `SHA256SUMS.txt` to check your download against.
 
@@ -36,6 +38,14 @@ This also installs an AppArmor profile, which Ubuntu 24.04 and later need to run
    xattr -cr "/Applications/Squirrel Notes.app" && codesign --force --deep -s - "/Applications/Squirrel Notes.app"
    ```
 3. Open it as usual.
+
+### Windows
+
+> **The Windows build is new and hasn't been tested on Windows yet.** Please [tell us](https://github.com/squirrel-notes/desktop/issues) how it goes.
+
+1. Run the setup file. It installs for your account only, with no admin prompt.
+2. Because the beta isn't signed yet, Windows shows **Windows protected your PC**. Choose **More info**, then **Run anyway**.
+3. Squirrel Notes opens, and is in the Start menu and on your desktop.
 
 ## Good to know
 
