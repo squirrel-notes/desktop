@@ -51,6 +51,7 @@ This also installs an AppArmor profile, which Ubuntu 24.04 and later need to run
 
 - **Sign-in** works the same as on the web, Google included. Passkeys don't work in the desktop app yet: on the passkey prompt, choose **Try another way**.
 - **Find on page:** Ctrl+F (⌘F on a Mac). Like a browser's find, it only sees what's on screen, so in a long note it can miss lines further down.
+- **Overdue tasks on the icon:** the number of overdue tasks shows as a badge on the app's icon (Dock on a Mac, taskbar on Windows and Linux), like an unread count. It updates while the app is open.
 - **Links** to other websites open in your normal browser.
 - **Diagnostics:** the beta keeps a small log of which sites the window opened (site and path only, never codes, tokens or note content) in its settings folder, to help fix sign-in problems. It never leaves your computer.
 
